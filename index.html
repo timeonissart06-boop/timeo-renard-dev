@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timeo Renard — Développement Web pour TPE & indépendants de la Côte d'Azur</title>
+  <meta name="description" content="Je crée des sites qui donnent envie d'être contacté, pour les TPE et indépendants de la Côte d'Azur. Développeur web freelance, tarifs directs, double compétence dev + marketing." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <a href="#top" class="logo">
+      <img class="logo-mark" src="images/logo-mask.png" alt="" />
+      <span class="logo-text">Timeo Renard<em>Développement Web</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+      <a href="services.html">Services</a>
+      <a href="processus.html">Processus</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Basculer le thème clair / sombre">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="contact.html" class="btn btn-primary header-cta">Demander un devis</a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="kicker">Timeo, développeur web — Côte d'Azur</span>
+          <h1 class="hero-title" data-reveal-words>
+            Je crée des sites qui donnent <span class="hand-underline">envie<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M3 14 C 60 6, 130 6, 180 11 S 270 16, 297 8"/></svg></span> d'être contacté.
+          </h1>
+          <p class="hero-sub">
+            Pour les TPE et indépendants de la Côte d'Azur. Un site qui vous ressemble, pensé pour convertir — sans le jargon ni les délais d'une agence. Vous parlez en direct à celui qui code.
+          </p>
+          <div class="hero-cta-row">
+            <a href="contact.html" class="btn btn-primary btn-lg">Demander un devis</a>
+            <a href="processus.html" class="link-arrow">Voir comment je travaille</a>
+          </div>
+          <p class="hero-trust">
+            <span class="count" data-to="48" data-suffix=" h">0</span> de réponse en moyenne · zéro intermédiaire · la double casquette <em>dev&nbsp;+&nbsp;marketing</em>.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Sites vitrines</span><span class="star">✦</span><span>Landing pages</span><span class="star">✦</span><span>SEO local</span><span class="star">✦</span><span>Refonte</span><span class="star">✦</span><span>Identité visuelle</span><span class="star">✦</span><span>Maintenance</span><span class="star">✦</span>
+          <span>Sites vitrines</span><span class="star">✦</span><span>Landing pages</span><span class="star">✦</span><span>SEO local</span><span class="star">✦</span><span>Refonte</span><span class="star">✦</span><span>Identité visuelle</span><span class="star">✦</span><span>Maintenance</span><span class="star">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES / PACKS ============ -->
+    <section class="section services" id="services">
+      <div class="section-head">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> Packs &amp; tarifs</span>
+        <h2>Des formules claires, des prix annoncés.</h2>
+        <p>Pas de devis fantôme ni de coûts cachés. Vous savez ce que vous payez, et pourquoi.</p>
+      </div>
+
+      <div class="packs">
+        <!-- Essentiel -->
+        <article class="pack">
+          <div class="pack-top">
+            <h3>Essentiel</h3>
+            <p class="pack-desc">Le site vitrine qui pose les bases et inspire confiance.</p>
+            <div class="pack-price"><span class="amount">800</span><span class="cur">€</span></div>
+          </div>
+          <ul class="pack-list">
+            <li>Site vitrine 1 à 3 pages</li>
+            <li>Design responsive sur-mesure</li>
+            <li>Formulaire de contact</li>
+            <li>Référencement local de base</li>
+            <li>Mise en ligne incluse</li>
+          </ul>
+          <a href="services.html" class="btn btn-outline pack-btn">Voir le détail</a>
+        </article>
+
+        <!-- Pro — Recommandé / élément signature -->
+        <article class="pack pack-featured">
+          <span class="pack-flag">★ Recommandé</span>
+          <div class="pack-top">
+            <h3>Pro</h3>
+            <p class="pack-desc">Le site complet qui travaille pour vous et génère des contacts.</p>
+            <div class="pack-price"><span class="amount">1400</span><span class="cur">€</span></div>
+          </div>
+          <ul class="pack-list">
+            <li>Site jusqu'à 6 pages</li>
+            <li>Tout le pack Essentiel</li>
+            <li>SEO local avancé &amp; Google Business</li>
+            <li>Animations &amp; identité visuelle</li>
+            <li>Suivi des performances</li>
+            <li>1 mois de support offert</li>
+          </ul>
+          <a href="services.html" class="btn btn-primary pack-btn">Voir le détail</a>
+        </article>
+
+        <!-- Sur-mesure -->
+        <article class="pack">
+          <div class="pack-top">
+            <h3>Sur-mesure</h3>
+            <p class="pack-desc">Un projet spécifique ? On construit exactement ce qu'il vous faut.</p>
+            <div class="pack-price"><span class="amount">Sur devis</span></div>
+          </div>
+          <ul class="pack-list">
+            <li>E-commerce, réservation, blog…</li>
+            <li>Fonctionnalités personnalisées</li>
+            <li>Intégrations &amp; automatisations</li>
+            <li>Accompagnement marketing</li>
+            <li>Maintenance évolutive</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline pack-btn">Parlons-en</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ POURQUOI MOI ============ -->
+    <section class="section why" id="why">
+      <div class="why-head">
+        <span class="kicker">Pourquoi travailler avec moi</span>
+        <h2>Le travail d'une agence,<br><span class="ital">sans les frais ni les délais.</span></h2>
+        <p class="why-lead">Vous cherchez quelqu'un de fiable, joignable, qui comprend vraiment votre activité. C'est exactement pour ça que je travaille en direct.</p>
+      </div>
+
+      <ol class="why-list">
+        <li class="why-row">
+          <span class="why-num">01</span>
+          <div class="why-body">
+            <h3>Réactif, vraiment</h3>
+            <p>Vous m'écrivez, je réponds — souvent dans la journée. Pas de service client, pas de ticket qui traîne une semaine.</p>
+          </div>
+        </li>
+        <li class="why-row">
+          <span class="why-num">02</span>
+          <div class="why-body">
+            <h3>Des tarifs en direct</h3>
+            <p>Pas d'agence ni de commercial à payer entre nous. Vous mettez votre budget dans le site, pas dans les marges.</p>
+          </div>
+        </li>
+        <li class="why-row">
+          <span class="why-num">03</span>
+          <div class="why-body">
+            <h3>Dev <em>+</em> marketing</h3>
+            <p>Je ne fais pas qu'un beau site : je le pense pour qu'il attire des clients et vous fasse contacter.</p>
+          </div>
+        </li>
+        <li class="why-row">
+          <span class="why-num">04</span>
+          <div class="why-body">
+            <h3>Local, je connais le terrain</h3>
+            <p>TPE et indépendants de la Côte d'Azur : je sais à qui vous parlez et comment vous démarquer près de chez vous.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section cta-band">
+      <div class="cta-inner">
+        <h2>Un projet en tête&nbsp;? <em>Discutons-en.</em></h2>
+        <p>Un message, un café (ou un appel), et un devis clair sous 48&nbsp;h.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Demander un devis</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">
+          <img class="logo-mark" src="images/logo-mask.png" alt="" />
+          <span class="logo-text">Timeo Renard<em>Développement Web</em></span>
+        </span>
+        <p>Sites web pour les TPE et indépendants de la Côte d'Azur. Conçus pour donner envie d'être contacté.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Liens rapides">
+        <h3>Navigation</h3>
+        <a href="services.html">Services</a>
+        <a href="processus.html">Processus</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="mailto:renard.timeo06@gmail.com">renard.timeo06@gmail.com</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="footer-social">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.99H5.67v8.35h2.67zM7 8.81a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.53v-4.57c0-2.45-1.31-3.59-3.06-3.59-1.41 0-2.04.78-2.39 1.32v-1.13h-2.67c.04.75 0 8.35 0 8.35h2.67v-4.66c0-.24.02-.48.09-.65.19-.48.63-.97 1.37-.97.97 0 1.36.73 1.36 1.81v4.47h2.66z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Timeo Renard — Développement Web. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Mentions légales">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="shader.js"></script>
+  <script src="consent.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

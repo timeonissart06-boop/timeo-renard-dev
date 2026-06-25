@@ -2,5 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-# Remplace le domaine ci-dessous par ton domaine réel une fois en ligne.
-Sitemap: https://www.timeo-renard.fr/sitemap.xml
+Sitemap: https://timcreationsite.fr/sitemap.xml

@@ -913,3 +913,69 @@ textarea:focus-visible, [tabindex]:focus-visible, .btn:focus-visible {
   .cookie-actions { width: 100%; }
   .cookie-actions .btn { flex: 1; }
 }
+
+/* =========================================================
+   SOUS-TITRES SEO (H2 sous le H1, riches en mots-clés)
+   ========================================================= */
+.kw-subtitle {
+  font-family: var(--font-body); font-weight: 500; font-size: 1.05rem;
+  color: var(--text-soft); letter-spacing: 0; line-height: 1.5;
+  margin: -10px 0 26px; max-width: 40em;
+}
+.hero .kw-subtitle { margin-top: -6px; }
+
+/* =========================================================
+   BLOG — liste d'articles
+   ========================================================= */
+.blog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px 26px; }
+.post-card {
+  display: flex; flex-direction: column; overflow: hidden;
+  background: rgba(15,20,31,0.55); backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.09); border-radius: 18px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.post-card:hover { transform: translateY(-5px); border-color: rgba(255,255,255,0.22); }
+.post-cover { display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--bg-soft); }
+.post-cover img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.post-card:hover .post-cover img { transform: scale(1.05); }
+.post-body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.post-meta { font-size: 0.74rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; }
+.post-body h2 { font-size: 1.3rem; font-weight: 500; line-height: 1.22; }
+.post-body h2 a { color: var(--text); }
+.post-body h2 a:hover { color: var(--accent); }
+.post-body p { color: var(--text-soft); font-size: 0.96rem; flex: 1; }
+.post-body .link-arrow { margin-top: 4px; }
+
+/* =========================================================
+   BLOG — page article
+   ========================================================= */
+.article { max-width: 770px; margin: 0 auto; }
+.article-cover {
+  border-radius: 18px; overflow: hidden; margin-bottom: 30px;
+  box-shadow: var(--shadow-lg); aspect-ratio: 16 / 7; background: var(--bg-soft);
+}
+.article-cover img { width: 100%; height: 100%; object-fit: cover; }
+.article-body {
+  background: rgba(15,20,31,0.55); backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; padding: 40px 44px;
+}
+.article-body > p:first-of-type, .article-lead {
+  font-size: 1.18rem; color: var(--text); line-height: 1.7; margin-bottom: 18px;
+}
+.article-body h2 { font-size: 1.5rem; font-weight: 500; margin: 32px 0 12px; }
+.article-body p { color: var(--text-soft); margin-bottom: 14px; font-size: 1.06rem; line-height: 1.72; }
+.article-body ul { padding-left: 22px; margin: 4px 0 18px; }
+.article-body li { color: var(--text-soft); margin-bottom: 9px; line-height: 1.6; }
+.article-body a { color: var(--accent); text-decoration: underline; }
+.article-source { font-size: 0.85rem; color: var(--text-mute); font-style: italic; margin: 2px 0 20px; }
+.article-cta {
+  margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+}
+.article-cta p { margin: 0; color: var(--text); font-family: var(--font-head); font-size: 1.15rem; }
+
+@media (max-width: 720px) {
+  .blog-grid { grid-template-columns: 1fr; }
+  .article-body { padding: 28px 22px; }
+  .article-body > p:first-of-type, .article-lead { font-size: 1.08rem; }
+}

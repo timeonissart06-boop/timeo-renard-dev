@@ -416,6 +416,7 @@ img { max-width: 100%; display: block; }
 .svc-features li { position: relative; padding-left: 22px; font-size: 0.95rem; color: var(--text-soft); }
 .svc-features li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 10px; height: 2px; background: var(--accent); }
 .svc-cta { white-space: nowrap; }
+.svc-desc { grid-column: 1 / -1; margin-top: 8px; color: var(--text-soft); font-size: 0.98rem; line-height: 1.65; max-width: 78ch; }
 
 .faq { max-width: 760px; margin: 0 auto; }
 .faq-item { border-bottom: 1px solid var(--border); }

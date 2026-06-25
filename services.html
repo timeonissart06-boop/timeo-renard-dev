@@ -22,6 +22,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://timcreationsite.fr/index.html" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://timcreationsite.fr/services.html" }
+        ]
+      },
+      {
+        "@type": "Service", "serviceType": "Création de site vitrine", "name": "Pack Essentiel",
+        "description": "Site vitrine 1 à 3 pages, design sur-mesure responsive, référencement local de base et mise en ligne incluse.",
+        "provider": { "@type": "ProfessionalService", "name": "Timeo Renard — Développement Web" },
+        "areaServed": ["Antibes", "Nice", "Sophia Antipolis", "Cannes"],
+        "offers": { "@type": "Offer", "price": "800", "priceCurrency": "EUR" }
+      },
+      {
+        "@type": "Service", "serviceType": "Création de site internet professionnel", "name": "Pack Pro",
+        "description": "Site jusqu'à 6 pages, SEO local avancé, fiche Google Business optimisée, identité visuelle et un mois de support.",
+        "provider": { "@type": "ProfessionalService", "name": "Timeo Renard — Développement Web" },
+        "areaServed": ["Antibes", "Nice", "Sophia Antipolis", "Cannes"],
+        "offers": { "@type": "Offer", "price": "1400", "priceCurrency": "EUR" }
+      },
+      {
+        "@type": "Service", "serviceType": "Site sur-mesure (e-commerce, réservation, blog)", "name": "Pack Sur-mesure",
+        "description": "Boutique en ligne, réservation, espace membre ou fonctionnalités spécifiques, avec accompagnement marketing complet.",
+        "provider": { "@type": "ProfessionalService", "name": "Timeo Renard — Développement Web" },
+        "areaServed": ["Antibes", "Nice", "Sophia Antipolis", "Cannes"],
+        "offers": { "@type": "Offer", "price": "2200", "priceCurrency": "EUR", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "2200", "priceCurrency": "EUR" } }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Combien de temps pour créer mon site ?", "acceptedAnswer": { "@type": "Answer", "text": "En général 1 à 3 semaines selon le pack et votre réactivité pour les contenus. Je vous donne un délai précis dès le devis." } },
+          { "@type": "Question", "name": "Les prix incluent-ils l'hébergement et le nom de domaine ?", "acceptedAnswer": { "@type": "Answer", "text": "Je vous accompagne pour les mettre en place, mais l'abonnement hébergement + domaine (environ 50 à 100 €/an) reste à votre nom. Vous gardez le contrôle total." } },
+          { "@type": "Question", "name": "Pourrai-je modifier mon site moi-même ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, selon la solution choisie je peux mettre en place un système simple pour modifier vos textes et images sans toucher au code." } },
+          { "@type": "Question", "name": "Et après la mise en ligne ?", "acceptedAnswer": { "@type": "Answer", "text": "Le pack Pro inclut 1 mois de support. Au-delà, je propose une maintenance à la carte ou ponctuelle — vous n'êtes engagé à rien." } }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Aller au contenu principal</a>

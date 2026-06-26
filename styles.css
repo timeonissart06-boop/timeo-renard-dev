@@ -513,6 +513,8 @@ img { max-width: 100%; display: block; }
 .about-portrait { overflow: hidden; aspect-ratio: 4/5; position: sticky; top: 100px; box-shadow: var(--shadow-lg); border-radius: 58% 42% 50% 50% / 12% 12% 88% 88%; transform: rotate(-2deg); }
 .about-portrait img { width: 100%; height: 100%; object-fit: cover; }
 .about-text h2 { font-size: 1.9rem; font-weight: 500; margin: 32px 0 12px; }
+.about-text a { color: var(--accent); text-decoration: underline; }
+.portfolio-link { margin: 18px 0 4px; }
 .about-text h2:first-child { margin-top: 0; }
 .about-text p { color: var(--text-soft); margin-bottom: 14px; font-size: 1.05rem; }
 .about-stats { display: flex; gap: 44px; flex-wrap: wrap; margin: 30px 0; }
@@ -924,6 +926,16 @@ textarea:focus-visible, [tabindex]:focus-visible, .btn:focus-visible {
   margin: -10px 0 26px; max-width: 40em;
 }
 .hero .kw-subtitle { margin-top: -6px; }
+
+/* H1 keyword (sous la phrase émotionnelle) + tagline éditoriale des pages internes */
+.hero-kw {
+  font-family: var(--font-body); font-weight: 600; font-size: 1.18rem;
+  color: var(--text-soft); line-height: 1.4; margin: -2px 0 10px; max-width: 36em;
+}
+.page-tagline {
+  font-family: var(--font-head); font-style: italic; font-weight: 500;
+  font-size: 1.35rem; color: var(--accent); margin: -4px 0 16px;
+}
 
 /* =========================================================
    BLOG — liste d'articles

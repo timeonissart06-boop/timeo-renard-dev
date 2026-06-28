@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "mcp__Claude_Preview__preview_start",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(curl -sS -m 25 -o /tmp/sm.xml -D - -w \"\\\\n--- code: %{http_code} | type: %{content_type} | taille: %{size_download} octets ---\\\\n\" \"https://timcreationsite.fr/sitemap.xml\")"
     ]
   }
 }

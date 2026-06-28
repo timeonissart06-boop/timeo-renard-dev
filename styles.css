@@ -515,6 +515,13 @@ img { max-width: 100%; display: block; }
 .about-text h2 { font-size: 1.9rem; font-weight: 500; margin: 32px 0 12px; }
 .about-text a:not(.btn) { color: var(--accent); text-decoration: underline; }
 .portfolio-link { margin: 18px 0 4px; }
+
+/* Sections de contenu SEO (sous la ligne de flottaison) */
+.seo-section { max-width: 780px; margin: 0 auto; }
+.seo-section p { color: var(--text-soft); font-size: 1.05rem; line-height: 1.72; margin-bottom: 14px; }
+.seo-section p strong { color: var(--text); }
+.seo-section h3 { font-size: 1.3rem; font-weight: 500; margin: 28px 0 10px; }
+.seo-section a { color: var(--accent); text-decoration: underline; }
 .about-text h2:first-child { margin-top: 0; }
 .about-text p { color: var(--text-soft); margin-bottom: 14px; font-size: 1.05rem; }
 .about-stats { display: flex; gap: 44px; flex-wrap: wrap; margin: 30px 0; }

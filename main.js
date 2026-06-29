@@ -10,12 +10,31 @@
   // --- Thème : le site est verrouillé en sombre (fond WebGL) ---
   root.setAttribute("data-theme", "dark");
 
-  // --- Header : bordure au scroll ---
+  // --- Header : bordure au scroll (ancien header, no-op si absent) ---
   const header = document.querySelector(".site-header");
   if (header) {
     const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  // --- Navbar flottante : onglet actif selon l'URL ---
+  const floatNav = document.getElementById("floatNav");
+  if (floatNav) {
+    const path = window.location.pathname;
+    let active = "/";
+    if (/\/services\.html$/.test(path)) active = "/services.html";
+    else if (/\/processus\.html$/.test(path)) active = "/processus.html";
+    else if (/\/blog/.test(path)) active = "/blog.html";
+    else if (/\/about\.html$/.test(path)) active = "/about.html";
+    else if (/\/contact\.html$/.test(path)) active = "/contact.html";
+    else active = "/";
+    floatNav.querySelectorAll("a").forEach((a) => {
+      if (a.getAttribute("href") === active) {
+        a.classList.add("active");
+        a.setAttribute("aria-current", "page");
+      }
+    });
   }
 
   // --- Menu mobile (hamburger) ---

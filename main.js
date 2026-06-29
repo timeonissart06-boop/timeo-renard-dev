@@ -163,6 +163,30 @@
     q.addEventListener("click", () => q.closest(".faq-item").classList.toggle("open"));
   });
 
+  // --- Pricing : bouton "Infos" (accordéon, un seul ouvert par grille) ---
+  document.querySelectorAll(".price-grid").forEach((grid) => {
+    grid.querySelectorAll(".pc-info-btn").forEach((btn) => {
+      const card = btn.closest(".price-card");
+      const details = card.querySelector(".pc-details");
+      if (!details) return;
+      btn.addEventListener("click", () => {
+        const willOpen = !details.classList.contains("open");
+        grid.querySelectorAll(".pc-details.open").forEach((d) => d.classList.remove("open"));
+        grid.querySelectorAll(".pc-info-btn.active").forEach((b) => {
+          b.classList.remove("active");
+          b.setAttribute("aria-expanded", "false");
+          b.textContent = "Infos";
+        });
+        if (willOpen) {
+          details.classList.add("open");
+          btn.classList.add("active");
+          btn.setAttribute("aria-expanded", "true");
+          btn.textContent = "Fermer";
+        }
+      });
+    });
+  });
+
   // --- Formulaire de contact (envoi réel via /api/contact) ---
   const form = document.getElementById("contactForm");
   if (form) {
